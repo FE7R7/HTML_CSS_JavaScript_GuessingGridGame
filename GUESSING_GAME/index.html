@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>G3</title>
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/G3.css">
+	<script type="text/javascript" src="js/myScript.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body class="w3-margin">
+	<header class="w3-row w3-green w3-center">
+		<h1> Guessing Grid Game - G<sup>3</sup></h1>
+	</header>
+	<main class="w3-margin-top">
+		<div class="w3-row">
+			<div class="w3-half w3-container">
+				<p>To play the game:</p>
+				<ul>
+					<li>There is a spot on the grid that if you guess wrong will cause you to loose the game that is generated at random each game</li>
+					<li>You must try select all spots without landing on the <span>X</span> </li>
+					<li>The progress bar will let you know how close you are to winning</li>
+					<li>Enter your grid position below and click Submit</li>
+				</ul>
+				<p>Best of luck........</p>
+			</div>
+			<div class="w3-half w3-display-container w3-center w3-section">
+				<img class="center" src="images/logo.png" alt="">
+			</div>
+		</div>
+		<div class="w3-light-grey w3-round w3-margin">
+			<div class="w3-green w3-round-xlarge" style="height:24px;width:0%" id="proBar"></div>
+		</div>
+
+		<div class="w3-row">
+			<div class="w3-half w3-container w3-green w3-center" style="height:320px;">
+				<table >
+					<tr>
+						<td>Enter Position</td>
+						<td><input type="text" name="" id="userChoice"></td>
+					</tr>
+					<tr>
+						<td>
+							<button class="w3-button w3-deep-orange w3-round-xlarge w3-bar-item"
+								id="submit">Submit</button>
+								
+						</td>
+						<td>
+							<button class="w3-button w3-deep-orange w3-round-xlarge w3-bar-item" id="newGame" disabled>New Game</button>
+						</td>
+					</tr>
+				</table>
+				<h2 id="result"></h2>
+			</div>
+			<div class="w3-half w3-container">
+				<table border="1">
+					<tr>
+						<td id="pos1"></td>
+						<td id="pos2"></td>
+						<td id="pos3"></td>
+					</tr>
+					<tr>
+						<td id="pos4"></td>
+						<td id="pos5"></td>
+						<td id="pos6"></td>
+					</tr>
+					<tr>
+						<td id="pos7"></td>
+						<td id="pos8"></td>
+						<td id="pos9"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="w3-row w3-cetner">
+			
+		</div>
+	</main>
+</body>
+</html>
